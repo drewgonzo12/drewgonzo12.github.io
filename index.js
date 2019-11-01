@@ -41,13 +41,23 @@ function clearAllFields() {
     document.getElementById("firstName").value = ' ';;
     document.getElementById("lastName").value = ' ';;
     document.getElementById("ageRange").value = ' ';;
-    document.getElementById("childrenPresent").value = ' ';;
-    document.getElementById("numberOfChildren").value = ' ';;
-    document.getElementById("medicalAttention").value = ' ';;
-    document.getElementById("patientReturnPossability").value = ' ';;
-    document.getElementById("streetSleptOnNightBefore").value = ' ';;
-    document.getElementById("seekingEmployment").value = ' ';;
-    document.getElementById("jobTypesSeeking").value = ' ';;
+    var ele = document.getElementsByName("ageRange");
+    for(var i=0;i<ele.length;i++)
+       ele[i].checked = false;
+    document.getElementById("numberOfChildren").value = ' ';
+    var ele = document.getElementsByName("medicalAttention");
+    for(var i=0;i<ele.length;i++)
+       ele[i].checked = false;
+    var ele = document.getElementsByName("patientReturnPossability");
+    for(var i=0;i<ele.length;i++)
+        ele[i].checked = false;
+    document.getElementById("streetSleptOnNightBefore").value = ' ';
+    var ele = document.getElementsByName("seekingEmployment");
+    for(var i=0;i<ele.length;i++)
+        ele[i].checked = false;
+    var ele = document.getElementsByName("jobTypesSeeking");
+    for(var i=0;i<ele.length;i++)
+        ele[i].checked = false;
 
     const listAllResponses = document.querySelector("listAllResponses");
 
