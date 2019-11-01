@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <p class="font" style="text-align: center; font-size: 50px; width: 100%;">Participant check-in</p>
+    <p class="font" style="text-align: center; font-size: 50px; width: 100%;">Visitor check-in</p>
     
     <div id = "SignInForm">
         <div class="box">
