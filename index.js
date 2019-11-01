@@ -44,7 +44,9 @@ function clearAllFields() {
     var ele = document.getElementsByName("ageRange");
     for(var i=0;i<ele.length;i++)
        ele[i].checked = false;
-    document.getElementById("numberOfChildren").value = ' ';
+    var ele = document.getElementsByName("numberOfChildren");
+    for(var i=0;i<ele.length;i++)
+        ele[i].checked = false;   
     var ele = document.getElementsByName("medicalAttention");
     for(var i=0;i<ele.length;i++)
        ele[i].checked = false;
