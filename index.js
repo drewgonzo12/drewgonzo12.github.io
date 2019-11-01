@@ -38,15 +38,16 @@ function submitResponse() {
     }
 
 function clearAllFields() {
-    document.getElementById("firstName").value = ' ';;
-    document.getElementById("lastName").value = ' ';;
-    document.getElementById("ageRange").value = ' ';;
+    document.getElementById("firstName").value = ' ';
+    document.getElementById("lastName").value = ' ';
+    document.getElementById("ageRange").value = ' ';
     var ele = document.getElementsByName("ageRange");
     for(var i=0;i<ele.length;i++)
        ele[i].checked = false;
-    var ele = document.getElementsByName("numberOfChildren");
+    var ele = document.getElementsByName("childrenPresent");
     for(var i=0;i<ele.length;i++)
-        ele[i].checked = false;   
+       ele[i].checked = false;
+    document.getElementById("numberOfChildren").value = ' ';
     var ele = document.getElementsByName("medicalAttention");
     for(var i=0;i<ele.length;i++)
        ele[i].checked = false;
